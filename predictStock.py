@@ -104,10 +104,7 @@ plt.title(f"{company} Share Price")
 plt.xlabel("Time")
 plt.ylabel(f"{company} Share Price")
 plt.legend()
-plt.savefig("predict"+n+".png")
-plt.clf()
-n = int(n)
-
+plt.show()
 
 # Predict Next Day
 real_data = [model_inputs[len(model_inputs) + 1 - prediction_days:len(model_inputs+1), 0]]
